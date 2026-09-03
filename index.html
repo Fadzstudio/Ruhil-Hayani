@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Ruhil Hayani ♡</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MUSIC -->
+    <audio id="bgMusic" loop>
+        <source src="background.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- PAGE 1 -->
+    <section class="page active" id="page1">
+        <div class="content">
+            <div class="heart">♡</div>
+
+            <p class="small-text">A little something for you...</p>
+
+            <h1>
+                I Have a<br>
+                little surprise<br>
+                for you
+            </h1>
+
+            <button class="next-btn" onclick="nextPage(2)">
+                seterusnya →
+            </button>
+        </div>
+    </section>
+
+
+    <!-- PAGE 2 -->
+    <section class="page" id="page2">
+        <div class="content">
+            <div class="birthday-icon">🎂</div>
+
+            <p class="small-text">Today is your special day</p>
+
+            <h1>
+                Happy Birthday<br>
+                <span>Sayang!!!</span>
+            </h1>
+
+            <p class="sub-text">
+                Semoga hari awak dipenuhi<br>
+                dengan kebahagiaan ♡
+            </p>
+
+            <button class="next-btn" onclick="nextPage(3)">
+                seterusnya →
+            </button>
+        </div>
+    </section>
+
+
+    <!-- PAGE 3 -->
+    <section class="page" id="page3">
+        <div class="content invitation">
+
+            <p class="small-text">You are invited to</p>
+
+            <h2>Awak di jemput ke</h2>
+
+            <h1 class="name">
+                Ruhil Hayani
+            </h1>
+
+            <h2 class="birthday">
+                Birthday
+            </h2>
+
+            <div class="question-box">
+                <p>Awak nak datang tak? 🥺</p>
+
+                <div class="choice-area">
+                    <button id="yesBtn" class="choice-btn yes" onclick="goToPage4()">
+                        NAK ♡
+                    </button>
+
+                    <button id="noBtn" class="choice-btn no" onclick="runAway()">
+                        TAKNAK
+                    </button>
+                </div>
+
+                <p id="attemptText" class="attempt-text">
+                    Pilih satu... 👀
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PAGE 4 -->
+    <section class="page" id="page4">
+        <div class="content">
+
+            <p class="small-text">Save the date ♡</p>
+
+            <h1>Tentatif</h1>
+
+            <div class="date-box">
+                <div class="day">SABTU</div>
+                <div class="date">5 SEPTEMBER 2026</div>
+            </div>
+
+            <div class="schedule">
+
+                <div class="schedule-item">
+                    <div class="time">10:00 AM</div>
+                    <div class="event">
+                        <strong>Pickup Princess</strong>
+                        <span>🚗</span>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">11:00 AM</div>
+                    <div class="event">
+                        <strong>Kuala Lumpur</strong>
+                        <span>📍</span>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">3:00 PM</div>
+                    <div class="event">
+                        <strong>Putrajaya</strong>
+                        <span>🌷</span>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="time">9:00 PM</div>
+                    <div class="event">
+                        <strong>Balik UIS</strong>
+                        <span>🏠</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="next-btn" onclick="nextPage(5)">
+                seterusnya →
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- PAGE 5 -->
+    <section class="page" id="page5">
+        <div class="content outfit-page">
+
+            <p class="small-text">And one more thing...</p>
+
+            <h1>Outfit</h1>
+
+            <div class="outfit-card">
+                <img
+                    src="outfit.png"
+                    alt="Outfit"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                >
+
+                <div class="image-placeholder">
+                    <span>♡</span>
+                    <p>Letakkan gambar outfit<br>di folder images</p>
+                </div>
+            </div>
+
+            <p class="outfit-text">
+                Dress nicely, princess ✨
+            </p>
+
+            <button class="next-btn" onclick="nextPage(6)">
+                seterusnya →
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- PAGE 6 -->
+    <section class="page" id="page6">
+        <div class="content final-page">
+
+            <div class="final-heart">♡</div>
+
+            <h1>
+                Terima Kasih!
+            </h1>
+
+            <p class="sub-text">
+                sebab sudi luangkan masa<br>
+                untuk birthday awak bersama saya ♡
+            </p>
+
+            <div class="flower">✿</div>
+
+            <p class="final-small">
+                See you on 5 September 2026
+            </p>
+
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
